@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1423501532 source:d:\jayanth\jayanth_c++ programs\skip list\skip\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1423505744 source:k:\skip list\main.c
+	<stdio.h>
+	<stdlib.h>
+
