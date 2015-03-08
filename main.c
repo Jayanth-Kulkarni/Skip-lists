@@ -1,3 +1,12 @@
+/****************************************************************************
+ Name        : Skip-lists.c
+ Author      : Jayanth Prakash Kulkarni
+ Copyright   : Copyright Mr Jayanth Prakash Kulkarni © 2015
+ Description : Ansi C
+ ***************************************************************************/
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #define MAXLEVEL 10
@@ -167,7 +176,7 @@ void display(SL* list)
     node *x = list->header;
             while (x && x->forward[1] != list->header)
             {
-                printf("%d->",x->forward[1]->data);
+                printf("%d,",x->forward[1]->data);
                 x = x->forward[1];
             }
             printf("NIL\n");
@@ -187,10 +196,13 @@ int main()
     while((fscanf(myFile,"%d",&numbers[i]))!=EOF) //scanf and check EOF
     i++;
 
+   int num;
    SL list;
    int ele;
    initialize(&list);
-   for(i=0;i<1000;i++)
+   printf("Enter the number of elements to be added ");
+   scanf("%d",&num);
+   for(i=0;i<num;i++)
    {
        insert(&list,numbers[i]);
    }
